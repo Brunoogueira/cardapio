@@ -424,4 +424,17 @@
       <!-- sidebar -->
       <script src="js/custom.js"></script>
    </body>
-</html>
+<msg = window.document.getElementById('msg');
+img = window.document.getElementById('imagem');
+hora = new Date().getHours();
+
+msg.innerHTML = hora < 12 ? "Bom dia" : hora < 18 ? "Boa tarde" : "Boa noite";
+
+foto = hora < 12 ? "https://cdn.pixabay.com/photo/2016/11/18/14/40/balcony-1834990__340.jpg" : hora < 18 ? "https://cdn.pixabay.com/photo/2018/10/05/14/39/sunset-3726030__340.jpg" : "https://cdn.pixabay.com/photo/2021/06/26/06/52/moon-6365467__340.jpg";
+
+img.src = foto;<h1>
+Teste
+</h1>
+
+<div id="msg"></div>
+<image id="imagem" width="100" heigth="100" src="https://cdn.pixabay.com/photo/2015/02/22/17/56/loading-645268_960_720.jpg"></image>
